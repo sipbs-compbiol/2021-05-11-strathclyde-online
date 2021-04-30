@@ -1,10 +1,13 @@
-{% assign curricula = "swc-gapminder|swc-inflammation"  | split: "|" %}
+{% assign curricula = "swc-gapminder|swc-inflammation" | split: "|" %}
 {% unless curricula contains site.curriculum %}
 {% include warning-curriculum.html %}
 {% endunless %}
 
 {% include install_instructions/shell.html %}
+{% comment %}
+We are not presenting git in the Strathclyde/IBioIC course
 {% include install_instructions/git.html %}
+{% endcomment %}
 {% include install_instructions/editor.html %}
 
 {% if site.flavor == "r" %}
@@ -19,10 +22,14 @@
 {% endif %}
 
 {% comment %}
+OpenRefine is being used in the Strathclyde/IBioIC online presentation.
+{% endcomment %}
+{% include install_instructions/openrefine.html %}
+
+{% comment %}
 The following setup instructions are commented out because Carpentries workshops
 cover the these topics less frequently. Please uncomment the lines that
 correspond to the topics covered in your workshop.
 
 {% include install_instructions/sql.html %}
-{% include install_instructions/openrefine.html %}
 {% endcomment %}
