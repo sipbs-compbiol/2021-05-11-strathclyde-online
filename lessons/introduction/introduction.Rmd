@@ -1,7 +1,7 @@
 ---
 title: 'IBioIC Carpentries'
 author: "Leighton Pritchard, Steven Ford"
-date: "4-5/5/2021"
+date: "11-12/5/2021"
 output:
   ioslides_presentation:
     css: ./includes/custom.css
@@ -33,7 +33,7 @@ Who Are Your Instructors?
 >   - Teaching Associate (SIPBS, Strathclyde)
 
 > - **Helpers**
->   - Emma Hobbs (St Andrews), Angelika Kiepas, David Mark, John Munnoch, Alemao Sanchez, Darren Scobie (Strathclyde)
+>   - Emma Hobbs (St Andrews), Angelika Kiepas, David Mark, Alemao Sanchez, Morgan Feeney, Romain Michalec (Strathclyde)
 
 
 ## Welcome
@@ -62,7 +62,7 @@ Please "raise your hand" in Zoom, and a helper will assist you
 Please do take notes on the course `etherpad`:
 </div>
 
-[https://pad.carpentries.org/2021-05-04-strathclyde-online](https://pad.carpentries.org/2021-05-04-strathclyde-online)
+[https://pad.carpentries.org/2021-05-11-strathclyde-online](https://pad.carpentries.org/2021-05-11-strathclyde-online)
 
 <div class="highlight">
 * **Communal notes**: share your understanding, and benefit from others
@@ -79,7 +79,7 @@ Please do take notes on the course `etherpad`:
 Full schedule on the course webpage:
 </div>
 
-- [https://sipbs-compbiol.github.io/2021-05-04-strathclyde-online/](https://sipbs-compbiol.github.io/2021-05-04-strathclyde-online/)
+- [https://sipbs-compbiol.github.io/2021-05-11-strathclyde-online/](https://sipbs-compbiol.github.io/2021-05-11-strathclyde-online/)
 
 - Day 1, AM: (Unix) Shell
 - Day 1, PM: `R` part 1

@@ -1,4 +1,4 @@
-# introduction.md - 2021-05-04-strathclyde-online
+# introduction.md - 2021-05-11-strathclyde-online
 
 **START THE SLIDES**
 
@@ -79,7 +79,7 @@
 
 - The overall schedule is on the course website 
 - **OPEN SITE**
-  - [https://sipbs-compbiol.github.io/2021-05-04-strathclyde-online/](https://sipbs-compbiol.github.io/2021-05-04-strathclyde-online/)
+  - [https://sipbs-compbiol.github.io/2021-05-11-strathclyde-online/](https://sipbs-compbiol.github.io/2021-05-01-strathclyde-online/)
   - This has the timings, and also links to slides and notes that we'll be using.
   - Please do follow along with the material on your own machine, if you want to - or download them for reference later
 
