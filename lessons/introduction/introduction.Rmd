@@ -1,0 +1,157 @@
+---
+title: 'IBioIC Carpentries'
+author: "Leighton Pritchard, Steven Ford"
+date: "4-5/5/2021"
+output:
+  ioslides_presentation:
+    css: ./includes/custom.css
+    font-family: 'Helvetica'
+    widescreen: True
+    self_contained: True
+    logo: images/science_logo_400x400.jpg
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Welcome
+
+## Welcome
+
+<div class="section">
+Who Are Your Instructors?
+</div>
+
+> - **Leighton Pritchard**
+>   - Computational Biologist (SIPBS, Strathclyde)
+>   - Programming for 40 years (and still learning how to code!)
+>   - Carpentries instructor for ≈6 years
+
+> - **Steven Ford**
+>   - Teaching Associate (SIPBS, Strathclyde)
+
+> - **Helpers**
+>   - Emma Hobbs (St Andrews), Angelika Kiepas, David Mark, John Munnoch, Alemao Sanchez, Darren Scobie (Strathclyde)
+
+
+## Welcome
+
+<div class="section">
+Prerequisites
+</div>
+
+- No prior programming/data science knowledge is required
+- Installed the required software on your own machines
+  - `git bash` (Windows only; use terminal on macOS/Linux)
+  - `RStudio` and `R` (all platforms)
+  - a text editor (**NOT WORD!**)
+  - `OpenRefine` (all platforms)
+  
+<div class="highlight">
+What if I haven't done this, yet?
+</div>
+
+Please "raise your hand" in Zoom, and a helper will assist you
+
+
+## Etherpad
+
+<div class="attention">
+Please do take notes on the course `etherpad`:
+</div>
+
+[https://pad.carpentries.org/2021-05-04-strathclyde-online](https://pad.carpentries.org/2021-05-04-strathclyde-online)
+
+<div class="highlight">
+* **Communal notes**: share your understanding, and benefit from others
+* **Ask questions**: get detailed answers with links and examples
+* **A record/reference for after the course**
+</div>
+
+
+# 2. Schedule
+
+## Timetable
+
+<div class="attention">
+Full schedule on the course webpage:
+</div>
+
+- [https://sipbs-compbiol.github.io/2021-05-04-strathclyde-online/](https://sipbs-compbiol.github.io/2021-05-04-strathclyde-online/)
+
+- Day 1, AM: (Unix) Shell
+- Day 1, PM: `R` part 1
+- Day 2, AM: `OpenRefine`
+- Day 2, PM: `R` part 2
+
+
+## Lesson Structures
+
+- Each lesson lasts about 3hr
+
+<div class="highlight">
+Zoom can be tiring!
+</div>
+
+- 3x 45 minute sections
+- 2x 15 minute breaks
+
+- 1hr for lunch
+
+
+## Workshop Roles
+
+- **You**
+  - get as much from the course as you can
+  - code along, attempt exercises, ask questions, share knowledge
+- **Instructors**
+  - prepare and lead you through the course material (live coding)
+- **Helpers**
+  - monitor EtherPad and Zoom chat to assist you 1:1 and as a group
+
+
+# 3. Housekeeping
+
+
+## Code of Conduct
+
+The Carpentries have a Code of Conduct (linked from the Etherpad)
+
+[https://docs.carpentries.org/topic_folders/policies/index_coc.html](https://docs.carpentries.org/topic_folders/policies/index_coc.html)
+
+- You can report issues and concerns confidentially to Leighton, Steve, or one of the helpers
+
+- If we're the problem…
+  - [coc@carpentries.org](coc@carpentries.org)
+  - [confidential@carpentries.org](confidential@carpentries.org)
+  
+## Help
+
+<div class="highlight">
+How do I get help?
+</div>
+
+- **Raise your hand in Zoom**
+  - (a helper will assist - 1:1 guidance)
+- **Post a question in the chat**
+  - (a helper will triage - 1:1 guidance/general points; other learners can help)
+- **Post a question in EtherPad**
+  - (a helper/instructor will assist - general points; other learners can help)
+
+## Feedback
+
+<div class="highlight">
+We need your feedback!
+</div>
+
+- **After each lesson**
+  - A link to a Qualtrics survey will be posted in EtherPad
+- **At the end of the course**
+  - Carpentries post-course online survey
+
+
+# Let's get started…
+
+
