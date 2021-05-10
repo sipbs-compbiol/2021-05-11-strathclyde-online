@@ -295,7 +295,9 @@ age <- age - 20
 
 
 <div class="references">
-* Good Enough Practices in Scientific Computing (2017) Wilson *et al.* <http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510>
+- Good Enough Practices in Scientific Computing (2017) Wilson *et al.* <http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510>
+- A Beginner's Guide <https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner's-guide/>
+- Structuring `R` Projects (more advanced) <https://chrisvoncsefalvay.com/2018/08/09/structuring-r-projects/>
 </class>
 
 
@@ -1645,7 +1647,7 @@ This is an R Markdown document. Markdown is a simple formatting syntax
 </div>
 
 
-# 14. Conclusion
+# 12. Conclusion
 
 
 ## You have learned:

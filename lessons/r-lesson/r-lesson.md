@@ -1,5 +1,108 @@
 # r-lesson.md - 2021-05-11-strathclyde-online
 
+<!-- TOC -->
+
+- [r-lesson.md - 2021-05-11-strathclyde-online](#r-lessonmd---2021-05-11-strathclyde-online)
+  - [1. DATA ANALYSIS](#1-data-analysis)
+  - [Data Analysis in the Scientific Cycle](#data-analysis-in-the-scientific-cycle)
+  - [Data-Intensive Research](#data-intensive-research)
+  - [Pipelines and Workflows](#pipelines-and-workflows)
+  - [Explore, Refine, Produce (ERP)](#explore-refine-produce-erp)
+  - [2. WELCOME TO `R`](#2-welcome-to-r)
+  - [Learning Objectives](#learning-objectives)
+  - [What is `RStudio`?](#what-is-rstudio)
+  - [Why not use `Excel`?](#why-not-use-excel)
+  - [`RStudio` overview - INTERACTIVE DEMO](#rstudio-overview---interactive-demo)
+  - [Variables](#variables)
+  - [Variables - INTERACTIVE DEMO](#variables---interactive-demo)
+  - [Functions](#functions)
+  - [Challenge 01](#challenge-01)
+  - [3. PROJECT MANAGEMENT IN `R`](#3-project-management-in-r)
+  - [How Projects Tend To Grow](#how-projects-tend-to-grow)
+  - [Example Directory Structure](#example-directory-structure)
+  - [Project Management in `RStudio`](#project-management-in-rstudio)
+  - [Working in RStudio](#working-in-rstudio)
+  - [4. A FIRST ANALYSIS IN `RSTUDIO`](#4-a-first-analysis-in-rstudio)
+  - [Our Task](#our-task)
+  - [Loading Data - INTERACTIVE DEMO](#loading-data---interactive-demo)
+  - [Challenge 02](#challenge-02)
+  - [Indexing Data](#indexing-data)
+  - [Indexing Data - INTERACTIVE DEMO](#indexing-data---interactive-demo)
+  - [Repetitive Calculations - INTERACTIVE DEMO](#repetitive-calculations---interactive-demo)
+  - [Base Graphics](#base-graphics)
+  - [Plotting - INTERACTIVE DEMO](#plotting---interactive-demo)
+  - [Challenge 03 (5min)](#challenge-03-5min)
+  - [4. Data Types and Structures in `R`](#4-data-types-and-structures-in-r)
+  - [Learning Objectives**](#learning-objectives-1)
+  - [Data Types and Structures in `R`](#data-types-and-structures-in-r)
+  - [What Data Types Do You Expect?](#what-data-types-do-you-expect)
+  - [Data Types in `R`](#data-types-in-r)
+  - [Challenge 04 (2min)](#challenge-04-2min)
+  - [FOUR COMMON `R` DATA STRUCTURES**](#four-common-r-data-structures)
+  - [Coercion](#coercion)
+  - [Factors](#factors)
+  - [Challenge 06 (5min)](#challenge-06-5min)
+  - [Lists](#lists)
+  - [Logical Indexing](#logical-indexing)
+  - [5. Dataframes](#5-dataframes)
+  - [Let's look at a `data.frame`](#lets-look-at-a-dataframe)
+  - [What is a `data.frame`](#what-is-a-dataframe)
+  - [Creating a `data.frame`](#creating-a-dataframe)
+  - [Loading a `data.frame`](#loading-a-dataframe)
+  - [Investigating `gapminder`](#investigating-gapminder)
+  - [7. PACKAGES](#7-packages)
+  - [Packages](#packages)
+  - [Challenge 07 (5min)](#challenge-07-5min)
+  - [Visualisation is Critical](#visualisation-is-critical)
+  - [The Grammar of Graphics](#the-grammar-of-graphics)
+  - [A Basic Scatterplot](#a-basic-scatterplot)
+  - [What is a Plot? *aesthetics*](#what-is-a-plot-aesthetics)
+  - [What is a Plot? `geom`s](#what-is-a-plot-geoms)
+  - [What is a Plot? `geom`s](#what-is-a-plot-geoms-1)
+  - [Challenge 08 (2min)](#challenge-08-2min)
+  - [What is a Plot? *layers*](#what-is-a-plot-layers)
+  - [What is a Plot? *layers*](#what-is-a-plot-layers-1)
+  - [What is a Plot? *layers*](#what-is-a-plot-layers-2)
+  - [Challenge 09 (5min)](#challenge-09-5min)
+  - [Transformations and `scale`s](#transformations-and-scales)
+  - [Statistics layers](#statistics-layers)
+  - [Multi-panel figures](#multi-panel-figures)
+  - [Challenge 10 (5min)](#challenge-10-5min)
+  - [9. Data Cleaning/Tidy Data](#9-data-cleaningtidy-data)
+  - [A Tidy Dataset (2)](#a-tidy-dataset-2)
+  - [Tidy Data](#tidy-data)
+  - [10. WORKING WITH TIDY DATA](#10-working-with-tidy-data)
+  - [Learning Objectives](#learning-objectives-2)
+  - [What and Why is `dplyr`?](#what-and-why-is-dplyr)
+  - [Split-Apply-Combine](#split-apply-combine)
+  - [`select()` - Interactive Demo**](#select---interactive-demo)
+  - [`filter()`](#filter)
+  - [Challenge 12](#challenge-12)
+  - [`group_by()`](#group_by)
+  - [`summarize()`](#summarize)
+  - [Challenge 13](#challenge-13)
+  - [`count()` and `n()`](#count-and-n)
+  - [`mutate()`](#mutate)
+  - [11. DYNAMIC REPORTS](#11-dynamic-reports)
+  - [Literate Programming](#literate-programming)
+  - [Create an `R Markdown` file](#create-an-r-markdown-file)
+  - [Creating a Report](#creating-a-report)
+  - [12. CONCLUSION](#12-conclusion)
+  - [You have learned](#you-have-learned)
+- [BONUS. PROGRAMMING IN `R`](#bonus-programming-in-r)
+  - [Learning Objectives](#learning-objectives-3)
+  - [`if()` … `else`](#if--else)
+  - [Challenge 14 (2min)](#challenge-14-2min)
+  - [`for()` loops](#for-loops)
+  - [`while()` loops](#while-loops)
+  - [Challenge 15 (2min)](#challenge-15-2min)
+  - [FUNCTIONS](#functions-1)
+  - [Why Functions?](#why-functions)
+  - [Defining a Function](#defining-a-function)
+  - [Documentation](#documentation)
+
+<!-- /TOC -->
+
 **START THE SLIDES**
 
 -----
@@ -516,6 +619,12 @@ This will subtract 20 from the existing value of 122 to give a new value of 102 
 - **`scripts`** might be where you would choose to keep the executable code that automates your analysis
 
 - The important thing is that the structure is **AS SELF-EXPLANATORY AS POSSIBLE**
+
+- General rules to keep in mind
+  - **THE PROJECT DETERMINES THE STRUCTURE**: you might have more flexibility with small project than with safety-critical code
+  - **STRUCTURE IS A MEANS TO AN END**: you can bend and break guidelines when it enables robustness, readability, and maintenance
+  - **SOME TOOLS CAN HELP**: Linters can make sure your code is typo-free and has no syntax errors; cookie-cutter templating can be useful
+  - **ADD A README FILE**
 
 -----
 
@@ -2170,7 +2279,7 @@ p + geom_density_2d(alpha=0.5) + facet_wrap(~year)
 
 -----
 
-# 10. WORKING WITH TIDY DATA
+## 10. WORKING WITH TIDY DATA
 
 -----
 
@@ -2214,7 +2323,7 @@ p + geom_density_2d(alpha=0.5) + facet_wrap(~year)
 
 -----
 
-`select()` - Interactive Demo**
+## `select()` - Interactive Demo**
 
 - **DEMO IN CONSOLE**
     - Import `dplyr`
@@ -2459,7 +2568,7 @@ gdp_bycontinents_byyear <- gapminder %>%
 
 -----
 
-## 13. DYNAMIC REPORTS
+## 11. DYNAMIC REPORTS
 
 -----
 
@@ -2589,6 +2698,7 @@ gapminder <- read.csv(datapath, sep=",", header=TRUE)
 source("../scripts/functions.R")
 ```
 
+```r
 # Introduction
 
 We will present the life expectancies over time in a set of countries, using the gapminder data in the file `r datapath`.
@@ -2600,6 +2710,7 @@ We will specifically focus on countries beginning with the letters: `r az`.
 In countries starting with these letters, the life expectancy is as plotted below.
 
 We use the code from our earlier challenge solution
+```
 
 ```{r plot_function}
 plotLifeExp
@@ -2615,7 +2726,7 @@ plotLifeExp(gapminder, az, wrap=TRUE)
 
 -----
 
-## 14. CONCLUSION
+## 12. CONCLUSION
 
 -----
 
