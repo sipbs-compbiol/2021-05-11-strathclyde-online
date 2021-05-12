@@ -2,7 +2,7 @@
 
 Initial notes:
 
-Use the overview of ecah lesson to provide an overview of the activities.
+Use the overview of each lesson to provide an overview of the activities.
 
 ## Setup
 
@@ -16,7 +16,7 @@ I recommend that you tidy up your desktop (perhaps put everything into a folder 
 
 What do we want from a good analysis?
 
-$Good results = Good data + Good analysis$
+Good results = Good data + Good analysis
 
 What is good data? Perhaps ask the class for what good data is. Possible answers are: lots of data, no gaps or unknowns, variables are the same data catagory (integers are integers, dates are dates) and no typos.
 
@@ -37,11 +37,7 @@ Facetting is the process of examining different aspects of the dataset: asking w
 
 Clustering is where we try to combine data that we think is similar: for example New York, new york and newyork are (probably) all the same city. We could correct these by hand, but it's time consuming, we may miss data out by accident, our 'estimates' of similarity may be subjective (and so someone else may do it differently) and we need to do every dataset by hand. Clustering automates that process.
 
-Splitting/Undo-Redo/Trim - follow the DC instructions.
-
-## Filter and Sort with OpenRefine
-
-Follow the DC instructions
+Splitting - follow the DC instructions.
 
 ## Extra - writing your own tranformations
 
@@ -49,3 +45,10 @@ You can write your own transformation. (Select the arrow on the species column, 
 and tranform). In this example we want to convert the species name from the fullname,
 given as genus and species to the abbreviated (single letter) genus. After splitting the columns
 value.substring(0,1)+"."
+
+Undo-Redo/Trim - follow the DC instructions.
+
+## Filter and Sort with OpenRefine
+
+Follow the DC instructions
+
